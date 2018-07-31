@@ -1,7 +1,6 @@
 /**
- * 
- * 
- * 
+ * Anaconda program to create the display of the board where the snake and 
+ * cow is set on the JFrame.
  */
 
 package Anaconda;
@@ -69,7 +68,8 @@ public class Board extends JPanel implements ActionListener {
         runGame();
     }
    
-    /** Method that 
+    /** 
+     * Method that creates the board game.
      */
     public void runGame() {
         body = 5; // initial size of the body of snake is 5 segments long

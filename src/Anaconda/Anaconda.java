@@ -1,3 +1,6 @@
+/**
+ * Anaconda main program to execute the game.
+ */
 package Anaconda;
 import javax.swing.JFrame;
 
