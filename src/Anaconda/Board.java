@@ -29,7 +29,7 @@ public class Board extends JPanel implements ActionListener {
     private final int imgSize = 10; // Max images on board width*height/imgSize*imgSize
     private final int allImg = 2400; // Initial pixel size of images.
     private final int randomPos = 30; // Determines a random postion for food.
-    private final int delay = 120; // Speed of snake in miliseconds. Higher the number the slower the snake
+    private final int delay = 60; // Speed of snake in miliseconds. Higher the number the slower the snake
    
     private int x[] = new int[allImg];
     private int y[] = new int[allImg];
@@ -110,8 +110,8 @@ public class Board extends JPanel implements ActionListener {
     /** Method to output game over message when game ends.
      */
     public void gameOver(Graphics g) {
-        String message = "Game Over. U Mad Bro?"; // message when player loses
-        Font small = new Font("Helvetica", Font.BOLD, 36); // font attributes
+        String message = "Game Over. Please close and execute the program to try again. :)"; // message when player loses
+        Font small = new Font("Helvetica", Font.BOLD, 18); // font attributes
         FontMetrics metr = this.getFontMetrics(small);
         g.setColor(Color.red); // sets color of font
         g.setFont(small);
